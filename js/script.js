@@ -493,11 +493,15 @@ async function winner(player){
 	setInformationBox("informationboard",  winner + " WINS!!");
 	await sleep(5000);
 	stop();
+	$("#pokenumber2,#pokenumber").attr("disabled", false);
+	localStorage.removeItem("Pokemon");
+	localStorage.removeItem("Pokemon2");
 }
 
 const startBattle = async (battle) => {
 	if (battle.getPokemons().length < 2)
 		return alert("Choose 2 pokemons to start a battle");
+	$("#pokenumber2,#pokenumber").attr("disabled", "disabled");
 	$("#battle").show();
 	play();
 	
