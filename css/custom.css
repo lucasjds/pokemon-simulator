@@ -1,0 +1,233 @@
+*{
+  font-family:helvetica;
+}
+.all{
+  width:360px;
+}
+article{
+  border: none;
+  border-radius: 5px;
+  width:50px;
+  float:left;
+  margin-right:20px;
+  margin-bottom:5px;
+  padding:10px 10px 10px 10px;
+  color:white;
+  text-align: center;
+}
+
+
+
+fieldset{
+  border:1px none ;
+  border-radius:5px;
+  background-color: #e8ecdb;
+ 
+}
+
+section, fieldset{
+  width:270px;
+ 
+}
+
+
+
+section{
+   margin-left:20px;
+}
+
+section article:nth-child(1){
+  background-color:#FF5959;
+}
+
+section article:nth-child(2){
+  background-color:#F5AC78;
+}
+
+section article:nth-child(3){
+  background-color:#FAE078;
+}
+
+section article:nth-child(4){
+  background-color:#9DB7F5;
+}
+
+section article:nth-child(5){
+  background-color:#A7DB8D;
+}
+
+section article:nth-child(6){
+  background-color:#FA92B2;
+}
+#pokeimage, #pokeimage2{
+  float:left;
+  border: 1px none;
+  border-radius: 5px;
+  background-color:#e8ecdb;
+  margin-right:4px;
+}
+
+#pokemon1, #pokemon2{
+	width:auto;
+	float:left;
+}
+
+
+.basic_information{
+  width:auto !important; 
+  background-color:#e1bc9a !important;
+  text-align:left; 
+  width:190px !important; 
+}
+
+.body_information{
+  width:190px !important; 
+  background-color:#abc5de !important;
+  text-align:left;
+}
+
+.header{
+  width: auto !important;
+  padding: 5px !important;
+}
+
+.height, .weight{
+  text-align: right !important;
+  width:auto !important;
+  float: right !important;
+}
+
+
+
+#content1,#content2,#content3 ,#content4,#content5,#content6 {
+  display: none;
+  
+  border-top: 1px solid #ddd;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+  display: none;
+ 
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6 {
+  display: block;
+}
+
+label{
+  border: 1px solid;
+  border-bottom: 0px none;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  background-color:#3f51b5;
+  color:white;
+  padding:4px;
+  cursor:pointer;
+}
+
+.tab1,.tab4{
+  margin-left:22px;
+}
+
+#battle{
+	border: 2px solid black;
+    padding: 25px;
+	background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+	background-size: 100%;
+	width:475px;
+	height:245px;
+}
+
+#pokeimagebattle{
+	position: relative;
+    left: 26%;
+	width:96px;
+	height:96px;
+	top:15px;
+}
+
+#pokeimagebattle2{
+	position: relative;
+	left:60%;
+	margin-top:2%;
+    width:96px;
+	height:96px;
+}
+
+#informationboard{
+	position:relative;
+	top:-40%;
+	left:0%;
+	border: 7px double black;
+	background-color:#f6fceb;
+	height:47%;
+	z-index:999;
+	font-weight:600;
+	border-radius:8px;
+}
+
+#player2score{
+	position:relative;
+	left:1.8%;
+	top:0%;
+	border: 5px double black;
+	border-top-right-radius:12px;
+	border-bottom-left-radius:12px;
+	background-color:#f6fceb;
+	width:33% !important;
+	height:43%;
+	font-weight:600;
+}
+
+
+#player1score{
+	position:relative;
+	left:65%;
+	top:-45%;
+	border: 5px double black;
+	border-top-right-radius:12px;
+	border-bottom-left-radius:12px;
+	background-color:#f6fceb;
+	width:33% !important;
+	height:43%;
+	font-weight:600;
+	
+}
+
+#pokemoninformation2,#pokemoninformation1{
+	width:100%;
+	height:40%;
+
+}	
+
+
+#playernamebattle, #playernamebattle2,#playerhpbattle,#playerhpbattle2{
+	position:relative;
+	left:2%;
+	top:4%;
+	padding:2px;
+}
+
+.progress-bar{
+	border: 1px black solid;
+    width: 97%;
+	border-radius:20%;
+}
+
+#progress-bar-porcentage1,#progress-bar-porcentage0{
+	line-height:0.5;
+	background-color:#2196F3;
+	padding-top:0.1em;
+	padding-bottom:0.1em;
+	
+}
+
+#playerhpbattle,#playerhpbattle2,#playerhporiginal,#playerhporiginal2,.slash{
+	font-size:8pt;
+}

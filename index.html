@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokedex</title>
+
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='js/script.js'></script>
+</head>
+
+<body>
+<section id="pokemon1">
+	<form id=pokeform>
+		<input id=pokenumber placeholder="Number of the pokemon" />
+		<button type=submit>Go!</button>
+	</form>
+	<br>
+	<input id="tab1" type="radio" name="tabs" checked>
+
+	<input id="tab2" type="radio" name="tabs">
+
+	<input id="tab3" type="radio" name="tabs">
+
+	<section id="content1" class="all">
+		<section class="header">
+			<img id="pokeimage" class="pokeimage" />
+
+			<article class="basic_information">
+				<strong id="idpokemon">#</strong> <span id=pokename></span>
+				<br>
+				<span id=type></span>
+			</article>
+			<article class="body_information">
+				<strong>HT</strong>
+				<div class="height" id="height"></div>
+				<br>
+				<strong>WT</strong>
+				<div class="weight" id="weight"></div>
+			</article>
+
+		</section>
+
+		<section>
+			<fieldset>
+				<legend>
+					Stats
+				</legend>
+
+				<section>
+					<article>
+						HP
+						<br><span id="hp"></span>
+					</article>
+					<article>
+						Atk:
+						<br><span id="attack"></span>
+					</article>
+					<article>
+						Def:
+						<br><span id="defense"></span>
+					</article>
+					<article>
+						Speed:
+						<br><span id="speed"></span>
+					</article>
+					<article>
+						Sp.Atk:
+						<br><span id="spattack"></span>
+					</article>
+					<article>
+						Sp.Def:
+						<br><span id="spdefense"></span>
+					</article>
+
+				</section>
+
+			</fieldset>
+		</section>
+		<br>
+	</section>
+
+	<section id="content2">
+		teste2
+	</section>
+
+	<section id="content3">
+		test3
+	</section>
+
+	<section>
+		<label class="tab1" for="tab1">Main</label>
+
+		<label for="tab2">Moves</label>
+
+		<label for="tab3">Details</label>
+	</section>
+</section>
+   
+   
+<section id="pokemon2">
+	<form id=pokeform2>
+		<input id=pokenumber2 placeholder="Number of the pokemon" />
+		<button type=submit>Go!</button>
+	</form>
+	<br>
+	<input id="tab4" type="radio" name="tabs1" checked>
+
+	<input id="tab5" type="radio" name="tabs1">
+
+	<input id="tab6" type="radio" name="tabs1">
+	
+	<section id="content4" class="all">
+		<section class="header">
+			<img id="pokeimage2" class="pokeimage" />
+
+			<article class="basic_information">
+				<strong id="idpokemon2">#</strong> <span id=pokename2></span>
+				<br>
+				<span id=type2></span>
+			</article>
+			<article class="body_information">
+				<strong>HT</strong>
+				<div class="height" id="height2"></div>
+				<br>
+				<strong>WT</strong>
+				<div class="weight" id="weight2"></div>
+			</article>
+
+		</section>
+		
+		<section>
+			<fieldset>
+				<legend>
+					Stats
+				</legend>
+
+				<section>
+					<article>
+						HP
+						<br><span id="hp2"></span>
+					</article>
+					<article>
+						Atk:
+						<br><span id="attack2"></span>
+					</article>
+					<article>
+						Def:
+						<br><span id="defense2"></span>
+					</article>
+					<article>
+						Speed:
+						<br><span id="speed2"></span>
+					</article>
+					<article>
+						Sp.Atk:
+						<br><span id="spattack2"></span>
+					</article>
+					<article>
+						Sp.Def:
+						<br><span id="spdefense2"></span>
+					</article>
+
+				</section>
+
+			</fieldset>
+		</section>
+		<br>
+	</section>
+	
+	<section id="content5">
+		teste2
+	</section>
+
+	<section id="content6">
+		test3
+	</section>
+	
+	<section>
+		<label class="tab4" for="tab4">Main</label>
+
+		<label for="tab5">Moves</label>
+
+		<label for="tab6">Details</label>
+	</section>
+</section>
+<section>
+	<button type="button" id="startbattle">Start Battle!</button>
+	
+	<section id="battle">
+		<div id="pokemoninformation2">
+			<div id="player2score">
+				<div id="playernamebattle2"></div>		
+				<div class="progress-bar">
+					<div id="progress-bar-porcentage1" style="width:100%;"></div>
+				</div>
+				<span id="playerhpbattle2"></span><span class="slash">/</span><span id="playerhporiginal2"></span>
+			</div>
+			<img id="pokeimagebattle2" />
+		</div>
+		
+		<div id="pokemoninformation1">
+			<img id="pokeimagebattle" />
+			<div id="player1score">
+				<div id="playernamebattle"></div>
+				<div class="progress-bar">
+					<div id="progress-bar-porcentage0" style="width:100%;"></div>
+				</div>
+				<span id="playerhpbattle"></span><span class="slash">/</span><span id="playerhporiginal"></span>
+			</div>
+			<div id="informationboard">
+			</div>
+		</div>
+		
+		
+	</section>
+</section>
+
+<audio id="audio" src="https://vignette.wikia.nocookie.net/animaljam/images/8/87/Pokemon_Red%2C_Yellow%2C_Blue_Battle_Music-_Trainer.ogg/revision/latest?cb=20140621093959" ></audio>
+</body>
+
+</html>
